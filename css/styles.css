@@ -11,7 +11,7 @@ body {
     letter-spacing: 0.02em;
     font-weight: 400;
 }
-h1,h2,h3,h4,h5,h6
+h1,h2,h3,h4,h5,h6,p
 {
     margin:0;
     padding: 0;
@@ -153,11 +153,11 @@ color: #fff;
         gap: 24px;
 }
 .our-advantages-element {
-    flex-basis: calc(100% / 4 - var(--card-set-gap));
+    flex-basis: calc((100% - var(--card-set-gap)*3) / 4);
 }
 
 .servise-element {
-    flex-basis: calc(100% / 3 - var(--card-set-gap));
+    flex-basis: calc((100% - var(--card-set-gap)*2) / 3);
 }
 img.servise-element-img {
     display: block;
@@ -246,8 +246,9 @@ ul.list-of-team {
 }
 
 .footer {
-    /*height: 310px;*/
     background: #2E2F42;
+    color: #fff;
+    padding: 100px 0;
     
 }
 
@@ -304,6 +305,7 @@ color: #fff;
     font-size: 20px;
     letter-spacing: 0.02em;
     line-height: 1.2;
+    margin-bottom: 8px;
 }
 
 .lsit-of-work {
@@ -312,14 +314,17 @@ color: #fff;
     display: flex;
     list-style: none;
     flex-wrap: wrap;
-    gap: 24px;
+    column-gap: 24px;
+    row-gap: 48px;
     justify-content: center;
 }
 li.work-one {
-    flex-basis: calc(100% / 3 - var(--card-set-gap));
-    /*margin-left: var(--card-set-gap);*/
-    margin-bottom: 48px;
+    flex-basis: calc((100% - var(--card-set-gap)*2) / 3);
 
+}
+
+.work-one img {
+    display: block;
 }
 
 .work-description {
@@ -363,7 +368,7 @@ li.work-one {
     line-height: 1.5;
 }
 
-.footer-info p {
+.footer p {
     color: #E7E9FC;
     line-height: 1.5;
     margin: 0;
@@ -392,7 +397,7 @@ section.section.baner {
 }
 
 .list-of-team-element {
-    flex-basis: calc(100% / 4 - var(--card-set-gap));
+    flex-basis: calc((100% - var(--card-set-gap)*3) / 4);
 }
 
 .one-person {
